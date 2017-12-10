@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hamza_shakil.gameapplication.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/guessimg"
+        android:layout_marginTop="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/level"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="GuessGame"
+        android:text="Guess"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="level"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/imageView"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView" />
+
+
+    <TextView
+        android:id="@+id/correctGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correct Guess"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_above="@+id/editText"
+        android:layout_toRightOf="@+id/AttempsNo"
+        android:layout_toEndOf="@+id/AttempsNo"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp" />
+
+    <TextView
+        android:id="@+id/AttempsNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attemps"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_above="@+id/editText"
+        android:layout_toRightOf="@+id/level"
+        android:layout_toEndOf="@+id/level" />
+
+    <Button
+        android:id="@+id/TryAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AttempsNo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/AttempsNo"
+        android:layout_marginBottom="25dp"
+        android:onClick="onClick"
+        android:text="TryAgain"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mhamza.cvappfrag.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout1">
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="214dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="16dp"
+                android:text="Hamza Shakil"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="24sp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/Text1_layout"/>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="16dp"
+                android:text="CellNo: 03312409967"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp"
+                android:layout_weight="0.64"
+                android:layout_marginTop="12dp"
+                android:id="@+id/Text2_layout"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="105dp"
+            android:layout_height="104dp"
+            app:srcCompat="@drawable/th"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="12dp"
+    android:id="@+id/linearLayout2"
+    android:layout_below="@+id/linearLayout1"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+    <Button
+        android:id="@+id/Objbtn"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fadingEdge="horizontal|vertical"
+        android:onClick="selectFrag"
+        android:outlineProvider="background"
+        android:text="Objetcive"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/intbtn"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fadingEdge="horizontal|vertical"
+        android:onClick="selectFrag"
+        android:outlineProvider="background"
+        android:text="Interest"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/qualbtn"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fadingEdge="horizontal|vertical"
+        android:onClick="selectFrag"
+        android:outlineProvider="background"
+        android:text="Qualify"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/Skills"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fadingEdge="horizontal|vertical"
+        android:onClick="selectFrag"
+        android:outlineProvider="background"
+        android:text="Skill"
+        android:textSize="12sp" />
+</LinearLayout>
+
+        <fragment
+            android:name="mhamza.cvappfrag.Obj_Frage"
+            android:id="@+id/fragment_place"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_one"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_marginLeft="12dp"/>
+
+
+</RelativeLayout>

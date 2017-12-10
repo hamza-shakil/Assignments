@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:text="Qualification"
+        android:layout_marginLeft="12dp"
+        android:textSize="24sp"
+        android:textStyle="normal|bold|italic"/>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_weight="0.90"
+        android:text="Bachelor’s Degree: Ongoing BS(Computer Science)"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_weight="0.82"
+        android:text="HSC Certificate (2015): Passed my Intermediate Examination from Commecs College, Gulstan-e-Jauhar, Karachi"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_weight="4.44"
+        android:text="SSC Certificate (2013): Passed my Matriculation Examination from White House Grammar School"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic" />
+</LinearLayout>
